@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="resources\edit.png" />
+    <None Remove="resources\minus.png" />
+    <None Remove="resources\moon.png" />
+    <None Remove="resources\plus.png" />
+    <None Remove="resources\sun.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\edit.png" />
+    <Resource Include="resources\minus.png" />
+    <Resource Include="resources\moon.png" />
+    <Resource Include="resources\plus.png" />
+    <Resource Include="resources\sun.png" />
+  </ItemGroup>
+
 </Project>
