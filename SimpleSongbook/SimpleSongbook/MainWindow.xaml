@@ -60,8 +60,8 @@
         <Grid Grid.Row="1" Grid.Column="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
-                <ColumnDefinition Width="7*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
             <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" >
@@ -74,6 +74,46 @@
             <TextBlock Grid.Row="1" Grid.Column="1" Text="SimpleSongbook" FontSize="50" TextAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
         
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Utwór" VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="20"/>
+
+            <ListView x:Name="listaUtworow" Grid.Column="1" Grid.Row="1" Background="#FFFFF8C6"/>
+        </Grid>
+        
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Wyświetlanie tekstu-->
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Tekst" VerticalAlignment="Center" HorizontalAlignment="Center"
+           FontSize="20"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="Test tekstu" Background="#FFFFF8C6" />
+
+            <!--Wyświetlanie akordów-->
+            <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center"
+FontSize="20"/>
+            <TextBox Grid.Row="1" Grid.Column="3" Text="Test akordów" Background="#FFFFF8C6" />
+        </Grid>
     </Grid>
     
 </Window>
