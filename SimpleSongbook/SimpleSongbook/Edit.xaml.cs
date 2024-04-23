@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SimpleSongbook
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Edit.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Edit : Window
     {
-        public MainWindow()
+        public Edit()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Add addWindow = new Add();
-            addWindow.ShowDialog();
-            
         }
     }
 }

@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\cancel.png" />
+    <None Remove="resources\done.png" />
     <None Remove="resources\edit.png" />
     <None Remove="resources\minus.png" />
     <None Remove="resources\moon.png" />
@@ -16,6 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="resources\cancel.png" />
+    <Resource Include="resources\done.png" />
     <Resource Include="resources\edit.png" />
     <Resource Include="resources\minus.png" />
     <Resource Include="resources\moon.png" />

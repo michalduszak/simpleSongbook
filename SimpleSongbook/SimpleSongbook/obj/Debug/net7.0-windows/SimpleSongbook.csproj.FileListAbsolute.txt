@@ -18,3 +18,7 @@ C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj
 C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\SimpleSongbook.pdb
 C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\SimpleSongbook.genruntimeconfig.cache
 C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\ref\SimpleSongbook.dll
+C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\Add.g.cs
+C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\Edit.g.cs
+C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\Add.baml
+C:\Users\Misiu\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\Edit.baml
