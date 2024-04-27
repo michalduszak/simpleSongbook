@@ -54,10 +54,42 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-
+                
 
             </Grid>
+            
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Tytuł" VerticalAlignment="Center" HorizontalAlignment="Center"
+FontSize="30"/>
+                <TextBox Padding="10" Grid.Row="2" Background="#FFFFF8C6" x:Name="addName" FontSize="20" TextBlock.LineHeight="20" />
+
+            </Grid>
+            
         </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            
+            
+            
+            
+        </Grid>
+        
     </Grid>
     
     
