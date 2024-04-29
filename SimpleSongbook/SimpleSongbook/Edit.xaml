@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SimpleSongbook"
         mc:Ignorable="d"
         Title="Edit" Height="650" Width="1200"
-        Style="{DynamicResource {x:Type Window}}">
+      Style="{DynamicResource WindowStyle}">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -65,7 +65,7 @@
 
                 <!-- TYTUŁ UTWORU -->
                 <TextBlock Grid.Row="0" Text="Tytuł" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
-                <TextBox Padding="10" Grid.Row="2"  x:Name="editTitle"/>
+                <TextBox Padding="10" Grid.Row="2"  x:Name="editTitle" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
 
             </Grid>
 
@@ -86,13 +86,13 @@
 
             <!-- TEKST UTWORU -->
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="0" x:Name="editLyrics"/>
+            <TextBox Grid.Row="3" Grid.Column="0" x:Name="editLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
 
             <!-- AKORDY UTWORU-->
             <TextBlock Grid.Row="1" Grid.Column="2" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="2" x:Name="editChords"/>
+            <TextBox Grid.Row="3" Grid.Column="2" x:Name="editChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
         </Grid>
 
     </Grid>
-
+    
 </Window>

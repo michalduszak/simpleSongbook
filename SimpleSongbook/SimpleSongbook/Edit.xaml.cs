@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace SimpleSongbook
 {
     /// <summary>
-    /// Logika interakcji dla klasy Edit.xaml
+    /// Interaction logic for Edit.xaml
     /// </summary>
     public partial class Edit : Window
     {

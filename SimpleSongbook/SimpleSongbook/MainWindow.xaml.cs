@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,25 +21,98 @@ namespace SimpleSongbook
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool _darkmode = false;
+        SongContext songContext;
+        private bool DarkmodeState { get; set; } = false;
+        List<Song> songListDB;
+        Song selectedSong;
         public MainWindow()
         {
+            songContext = new();
             InitializeComponent();
+
+            songListDB = songContext.Songs.Select(s => s).ToList();
+
+            songList.ItemsSource = null;
+            songList.ItemsSource = songListDB;
         }
 
         private void AddButton(object sender, RoutedEventArgs e)
         {
-            Add addWindow = new Add();
+            Add addWindow = new();
             addWindow.ShowDialog();
-
+            
         }
 
         private void Darkmode(object sender, RoutedEventArgs e)
         {
-            if (_darkmode)
+            if (!DarkmodeState)
             {
+                DarkmodeState = true;
+                //darkmodeImage.
+                var appResources = Application.Current.Resources;
+                // Retrieve the global style
+                var windowStyle = new Style(((Style)appResources["WindowStyle"]).TargetType);
+                var listViewStyle = new Style(((Style)appResources["ListViewStyle"]).TargetType);
+                var textBoxStyle = new Style(((Style)appResources["TextBoxStyle"]).TargetType);
 
+                listViewStyle.Setters.Clear();
+                windowStyle.Setters.Clear();
+                textBoxStyle.Setters.Clear();
+
+                // Update background and foreground colors
+                windowStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.DimGray));
+                windowStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
+
+
+                listViewStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.Black));
+                listViewStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
+
+                textBoxStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.Black));
+                textBoxStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
+
+
+                // Apply the changes
+                appResources["WindowStyle"] = windowStyle;
+                appResources["ListViewStyle"] = listViewStyle;
+                appResources["TextBoxStyle"] = textBoxStyle;
             }
+            else
+            {
+                DarkmodeState = false;
+                var appResources = Application.Current.Resources;
+
+                // Retrieve the global style
+                var windowStyle = new Style(((Style)appResources["WindowStyle"]).TargetType);
+                var listViewStyle = new Style(((Style)appResources["ListViewStyle"]).TargetType);
+                var textBoxStyle = new Style(((Style)appResources["TextBoxStyle"]).TargetType);
+
+                listViewStyle.Setters.Clear();
+                windowStyle.Setters.Clear();
+                textBoxStyle.Setters.Clear();
+
+                // Update background and foreground colors
+                windowStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.Beige));
+                windowStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.Black));
+
+                listViewStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.LemonChiffon));
+                listViewStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.Black));
+
+                textBoxStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.LemonChiffon));
+                textBoxStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.Black));
+
+                // Apply the changes
+                appResources["WindowStyle"] = windowStyle;
+                appResources["ListViewStyle"] = listViewStyle;
+                appResources["TextBoxStyle"] = textBoxStyle;
+            }
+ 
+        }
+        
+        private void ChangeSong(object sender, SelectionChangedEventArgs e)
+        {
+            selectedSong = (Song)songList.SelectedItem;
+            lyrics.Text = selectedSong.Lyrics;
+            chords.Text = selectedSong.Chords;
         }
     }
 }

@@ -7,8 +7,8 @@
         WindowStyle="SingleBorderWindow"
         mc:Ignorable="d"
         Title="SimpleSongbook" Height="650" Width="1200"
-        Style="{DynamicResource {x:Type Window}}">
-
+        Style="{DynamicResource WindowStyle}">
+        
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -72,7 +72,7 @@
             </Button>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="SimpleSongbook" FontSize="50" TextAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-
+        
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -83,13 +83,14 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-
+            
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Utwór" VerticalAlignment="Center" HorizontalAlignment="Center"
                        FontSize="20"/>
 
-            <ListView x:Name="songList" Grid.Column="1" Grid.Row="1" Background="#FFFFF8C6"/>
+            <ListView x:Name="songList" Grid.Column="1" Grid.Row="1" Style="{DynamicResource ListViewStyle}"  ItemsSource="{Binding Song}"
+                      DisplayMemberPath="Title" SelectionMode="Single" SelectionChanged="ChangeSong" FontSize="20" TextBlock.LineHeight="20"/>
         </Grid>
-
+        
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -102,15 +103,15 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-
+            
             <!--Wyświetlanie tekstu-->
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Tekst" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
 
             <!--Wyświetlanie akordów-->
             <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords"/>
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
         </Grid>
     </Grid>
-
+    
 </Window>
