@@ -20,16 +20,25 @@ namespace SimpleSongbook
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool _darkmode = false;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddButton(object sender, RoutedEventArgs e)
         {
             Add addWindow = new Add();
             addWindow.ShowDialog();
-            
+
+        }
+
+        private void Darkmode(object sender, RoutedEventArgs e)
+        {
+            if (_darkmode)
+            {
+
+            }
         }
     }
 }

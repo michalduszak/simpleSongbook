@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.7.34031.279
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSongbook", "SimpleSongbook\SimpleSongbook.csproj", "{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSongbook", "SimpleSongbook\SimpleSongbook.csproj", "{76BF31D8-8F24-4E88-BD61-24D6241C28C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BF31D8-8F24-4E88-BD61-24D6241C28C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BF31D8-8F24-4E88-BD61-24D6241C28C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BF31D8-8F24-4E88-BD61-24D6241C28C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BF31D8-8F24-4E88-BD61-24D6241C28C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6708C686-45E8-456D-9526-52958C3837E4}
+		SolutionGuid = {31640BFE-9998-40FA-BD27-912358C51031}
 	EndGlobalSection
 EndGlobal

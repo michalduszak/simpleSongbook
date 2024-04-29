@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleSongbook"
         WindowStyle="SingleBorderWindow"
-        Background="Beige"
         mc:Ignorable="d"
         Title="SimpleSongbook" Height="650" Width="1200"
-        FontFamily="Segoe UI Semilight">
-        
+        Style="{DynamicResource {x:Type Window}}">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -32,7 +31,7 @@
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
 
-            <Button Height="50" Width="50" Grid.Column="1" Grid.Row="1" Click="Button_Click">
+            <Button Height="50" Width="50" Grid.Column="1" Grid.Row="1" Click="AddButton">
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/resources/plus.png" />
@@ -64,16 +63,16 @@
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" >
+            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" Click="Darkmode" x:Name="darkmodeButton">
                 <Button.Template >
                     <ControlTemplate>
-                        <Image Source="/resources/moon.png" />
+                        <Image Source="/resources/moon.png" x:Name="darkmodeImage"/>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="SimpleSongbook" FontSize="50" TextAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-        
+
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -84,13 +83,13 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-            
+
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Utwór" VerticalAlignment="Center" HorizontalAlignment="Center"
                        FontSize="20"/>
 
             <ListView x:Name="songList" Grid.Column="1" Grid.Row="1" Background="#FFFFF8C6"/>
         </Grid>
-        
+
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -103,16 +102,15 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-            
+
             <!--Wyświetlanie tekstu-->
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Tekst" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="1"  Background="#FFFFF8C6" x:Name="lyrics"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics"/>
 
             <!--Wyświetlanie akordów-->
-            <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center"
-FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="3"  Background="#FFFFF8C6" x:Name="chords"/>
+            <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords"/>
         </Grid>
     </Grid>
-    
+
 </Window>
