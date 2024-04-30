@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\edit.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\edit.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\edit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\edit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\add.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\add.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -17,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\add.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\add.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\edit.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\edit.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\add.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\mduszak\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\simplesongbook\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -56,37 +64,62 @@
         },
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Add.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml.cs",
-              "RelativeDocumentMoniker": "SimpleSongbook\\Add.xaml.cs",
-              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml.cs",
-              "RelativeToolTip": "SimpleSongbook\\Add.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAkwCQAAAAdAAAA",
+              "DocumentIndex": 2,
+              "Title": "Edit.xaml",
+              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml",
+              "RelativeDocumentMoniker": "SimpleSongbook\\Edit.xaml",
+              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml",
+              "RelativeToolTip": "SimpleSongbook\\Edit.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-27T21:35:48.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml.cs",
+              "RelativeDocumentMoniker": "SimpleSongbook\\Edit.xaml.cs",
+              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml.cs",
+              "RelativeToolTip": "SimpleSongbook\\Edit.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T05:38:09.619Z",
+              "WhenOpened": "2024-04-30T09:13:34.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Add.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml.cs",
+              "RelativeDocumentMoniker": "SimpleSongbook\\Add.xaml.cs",
+              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml.cs",
+              "RelativeToolTip": "SimpleSongbook\\Add.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T09:20:45.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Add.xaml",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml",
               "RelativeDocumentMoniker": "SimpleSongbook\\Add.xaml",
               "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Add.xaml",
               "RelativeToolTip": "SimpleSongbook\\Add.xaml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAFQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-29T19:01:15.665Z",
+              "WhenOpened": "2024-04-30T09:20:08.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Styles.xaml",
               "RelativeDocumentMoniker": "SimpleSongbook\\Styles.xaml",
@@ -98,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Song.cs",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Song.cs",
               "RelativeDocumentMoniker": "SimpleSongbook\\Song.cs",
@@ -111,33 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SimpleSongbook\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml.cs",
               "RelativeToolTip": "SimpleSongbook\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAwwDgAAAANAAAA",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAzwKkAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T08:53:07.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SimpleSongbook\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml",
               "RelativeToolTip": "SimpleSongbook\\MainWindow.xaml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAABbAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAADwv0YAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-27T21:35:48.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\App.xaml",
               "RelativeDocumentMoniker": "SimpleSongbook\\App.xaml",
@@ -146,18 +179,38 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-29T08:51:47.9Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5d19f650-7970-4475-9cbd-d9bde362b383",
+        "Display": 1,
+        "X": -741,
+        "Y": 413,
+        "Width": 1692,
+        "Height": 792,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.xaml",
-              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml",
-              "RelativeDocumentMoniker": "SimpleSongbook\\Edit.xaml",
-              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\Edit.xaml",
-              "RelativeToolTip": "SimpleSongbook\\Edit.xaml",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFwAAABxAAAA",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SimpleSongbook\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml",
+              "RelativeToolTip": "SimpleSongbook\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-27T21:35:48.974Z",
+              "WhenOpened": "2024-04-30T11:14:45.915Z",
               "EditorCaption": ""
             }
           ]

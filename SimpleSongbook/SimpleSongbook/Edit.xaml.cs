@@ -19,9 +19,38 @@ namespace SimpleSongbook
     /// </summary>
     public partial class Edit : Window
     {
-        public Edit()
+        SongContext songContext;
+        Song songToEdit;
+        public Edit(Song songToEditPassed)
         {
+            songContext = new SongContext();
+            songToEdit = songToEditPassed;
             InitializeComponent();
+            editLyrics.Text = songToEditPassed.Lyrics;
+            editChords.Text = songToEditPassed.Chords;
+            editTitle.Text = songToEditPassed.Title;
+
+
+        }
+
+        private void EditSong(object sender, RoutedEventArgs e)
+        {
+            songToEdit.Lyrics = editLyrics.Text;
+            songToEdit.Title = editTitle.Text;
+            songToEdit.Chords = editChords.Text;
+
+            try
+            {
+                songContext.Songs.Update(songToEdit);
+                songContext.SaveChanges();
+                this.Close();
+            }
+            catch (Exception) { }
+            
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

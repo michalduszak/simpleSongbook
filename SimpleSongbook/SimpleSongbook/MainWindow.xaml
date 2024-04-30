@@ -46,7 +46,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Height="50" Width="50" Grid.Column="3" Grid.Row="1">
+            <Button Height="50" Width="50" Grid.Column="3" Grid.Row="1" Click="EditButton">
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/resources/edit.png" />
@@ -61,10 +61,19 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
                 <ColumnDefinition Width="8*"/>
-                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="10"/>
             </Grid.ColumnDefinitions>
-            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" Click="Darkmode" x:Name="darkmodeButton">
+            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" Click="AutoScroll" x:Name="scrollButton">
+                <Button.Template >
+                    <ControlTemplate>
+                        <Image Source="/resources/start.png" x:Name="scrollImage"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Height="50" Width="50" Grid.Column="4" Grid.Row="1" Click="Darkmode" x:Name="darkmodeButton">
                 <Button.Template >
                     <ControlTemplate>
                         <Image Source="/resources/moon.png" x:Name="darkmodeImage"/>
@@ -107,11 +116,14 @@
             
             <!--Wyświetlanie tekstu-->
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Tekst" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
-
+            <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  CanContentScroll="True" ScrollChanged="ScrollText" x:Name="ScrollLyrics">
+                <TextBox  x:Name="lyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
+            </ScrollViewer>
             <!--Wyświetlanie akordów-->
             <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
+            <ScrollViewer Grid.Row="1" Grid.Column="3" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"  CanContentScroll="True" ScrollChanged="ScrollText" x:Name="ScrollChords">
+                <TextBox  x:Name="chords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
+            </ScrollViewer>
         </Grid>
     </Grid>
     

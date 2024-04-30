@@ -23,7 +23,9 @@ namespace SimpleSongbook
     {
         SongContext songContext;
         private bool DarkmodeState { get; set; } = false;
+        private bool AutoscrollState { get; set; } = false;
         List<Song> songListDB;
+
         
         public MainWindow()
         {
@@ -60,10 +62,27 @@ namespace SimpleSongbook
                 {
                     songContext.Songs.Remove(songToDelete);
                     songContext.SaveChanges();
-                    MessageBox.Show("Pomyślnie sunięto utwór.");
+                    MessageBox.Show("Pomyślnie usunięto utwór.");
                     RefreshSonglist();
+                    GC.Collect();
                 }
                 catch (Exception) { }
+            }
+            else
+            {
+                MessageBox.Show("Nie wybrano żadnego utworu!");
+            }
+        }
+
+        private void EditButton(object sender, RoutedEventArgs e)
+        {
+            if (songList.SelectedItem != null)
+            {
+                Song songToEdit = (Song)songList.SelectedItem;
+               
+                Edit editWindow = new Edit(songToEdit);
+                editWindow.ShowDialog();
+                RefreshSonglist();
             }
             else
             {
@@ -149,6 +168,40 @@ namespace SimpleSongbook
                 Song songToAdd = (Song)songList.SelectedItem;
                 lyrics.Text = songToAdd.Lyrics;
                 chords.Text = songToAdd.Chords;
+            }
+        }
+        private void ScrollText(object sender, ScrollChangedEventArgs e)
+        {
+            var textToSync = (sender == ScrollLyrics) ? ScrollChords : ScrollLyrics;
+
+            textToSync.ScrollToVerticalOffset(e.VerticalOffset);
+        }
+
+        private async void AutoScroll(object sender, RoutedEventArgs e)
+        {
+            if (!AutoscrollState)
+            {
+                AutoscrollState = true;
+                var scrollImage = scrollButton.Template.FindName("scrollImage", scrollButton) as Image;
+                scrollImage.Source = new BitmapImage(new Uri("/resources/stop.png", UriKind.Relative));
+
+                int scrollSpeed = 1500; // milliseconds per line
+
+                while (AutoscrollState)
+                {
+                    
+                    // Scroll down by a small amount
+                    ScrollLyrics.LineDown();
+
+                    // Delay before scrolling next
+                    await Task.Delay(scrollSpeed);
+                }
+            }
+            else
+            {
+                AutoscrollState = false;
+                var scrollImage = scrollButton.Template.FindName("scrollImage", scrollButton) as Image;
+                scrollImage.Source = new BitmapImage(new Uri("/resources/start.png", UriKind.Relative));
             }
         }
     }
