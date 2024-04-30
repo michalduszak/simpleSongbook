@@ -9,7 +9,7 @@
         Title="SimpleSongbook" Height="650" Width="1200"
         FontFamily="Segoe UI Semilight"
         Style="{DynamicResource WindowStyle}">
-        
+         
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
