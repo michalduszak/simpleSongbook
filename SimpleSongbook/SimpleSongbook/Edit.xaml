@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:SimpleSongbook"
         mc:Ignorable="d"
         Title="Edit" Height="650" Width="1200"
+        FontFamily="Segoe UI Semilight"
       Style="{DynamicResource WindowStyle}">
 
     <Grid>

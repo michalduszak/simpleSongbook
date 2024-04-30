@@ -48,8 +48,11 @@ namespace SimpleSongbook
             if (!DarkmodeState)
             {
                 DarkmodeState = true;
-                //darkmodeImage.
                 var appResources = Application.Current.Resources;
+                var darkmodeImage = darkmodeButton.Template.FindName("darkmodeImage", darkmodeButton) as Image;
+
+                darkmodeImage.Source = new BitmapImage(new Uri("/resources/sun.png", UriKind.Relative));
+
                 // Retrieve the global style
                 var windowStyle = new Style(((Style)appResources["WindowStyle"]).TargetType);
                 var listViewStyle = new Style(((Style)appResources["ListViewStyle"]).TargetType);
@@ -80,6 +83,9 @@ namespace SimpleSongbook
             {
                 DarkmodeState = false;
                 var appResources = Application.Current.Resources;
+                var darkmodeImage = darkmodeButton.Template.FindName("darkmodeImage", darkmodeButton) as Image;
+
+                darkmodeImage.Source = new BitmapImage(new Uri("/resources/moon.png", UriKind.Relative));
 
                 // Retrieve the global style
                 var windowStyle = new Style(((Style)appResources["WindowStyle"]).TargetType);

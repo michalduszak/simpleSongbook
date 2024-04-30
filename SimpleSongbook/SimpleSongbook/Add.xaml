@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:SimpleSongbook"
         mc:Ignorable="d"
         Style="{DynamicResource WindowStyle}"
+        FontFamily="Segoe UI Semilight"
         Title="Add" Height="650" Width="1200">
     
     
