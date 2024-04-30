@@ -24,23 +24,51 @@ namespace SimpleSongbook
         SongContext songContext;
         private bool DarkmodeState { get; set; } = false;
         List<Song> songListDB;
-        Song selectedSong;
+        
         public MainWindow()
         {
             songContext = new();
             InitializeComponent();
+            RefreshSonglist();
+        }
 
+        private void RefreshSonglist()
+        {
             songListDB = songContext.Songs.Select(s => s).ToList();
-
             songList.ItemsSource = null;
             songList.ItemsSource = songListDB;
+            songList.SelectedItem = null;
+            lyrics.Text =  "";
+            chords.Text = "";
         }
 
         private void AddButton(object sender, RoutedEventArgs e)
         {
             Add addWindow = new();
             addWindow.ShowDialog();
-            
+            RefreshSonglist();
+            GC.Collect();
+
+        }
+
+        private void DeleteButton(object sender, RoutedEventArgs e)
+        {
+            if (songList.SelectedItem != null)
+            {
+                Song songToDelete = (Song)songList.SelectedItem;
+                try
+                {
+                    songContext.Songs.Remove(songToDelete);
+                    songContext.SaveChanges();
+                    MessageBox.Show("Pomyślnie sunięto utwór.");
+                    RefreshSonglist();
+                }
+                catch (Exception) { }
+            }
+            else
+            {
+                MessageBox.Show("Nie wybrano żadnego utworu!");
+            }
         }
 
         private void Darkmode(object sender, RoutedEventArgs e)
@@ -116,9 +144,12 @@ namespace SimpleSongbook
         
         private void ChangeSong(object sender, SelectionChangedEventArgs e)
         {
-            selectedSong = (Song)songList.SelectedItem;
-            lyrics.Text = selectedSong.Lyrics;
-            chords.Text = selectedSong.Chords;
+            if (songList.SelectedItem != null)
+            {
+                Song songToAdd = (Song)songList.SelectedItem;
+                lyrics.Text = songToAdd.Lyrics;
+                chords.Text = songToAdd.Chords;
+            }
         }
     }
 }

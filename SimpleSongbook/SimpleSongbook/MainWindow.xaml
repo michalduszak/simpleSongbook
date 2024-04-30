@@ -39,7 +39,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1">
+            <Button Height="50" Width="50" Grid.Column="2" Grid.Row="1" Click="DeleteButton">
                 <Button.Template>
                     <ControlTemplate>
                         <Image Source="/resources/minus.png" />
@@ -89,7 +89,7 @@
                        FontSize="20"/>
 
             <ListView x:Name="songList" Grid.Column="1" Grid.Row="1" Style="{DynamicResource ListViewStyle}"  ItemsSource="{Binding Song}"
-                      DisplayMemberPath="Title" SelectionMode="Single" SelectionChanged="ChangeSong" FontSize="20" TextBlock.LineHeight="20"/>
+                      DisplayMemberPath="Title"  SelectionMode="Single" SelectionChanged="ChangeSong" FontSize="20" TextBlock.LineHeight="20"/>
         </Grid>
         
         <Grid Grid.Row="2" Grid.Column="2">
@@ -107,11 +107,11 @@
             
             <!--Wyświetlanie tekstu-->
             <TextBlock Grid.Row="0" Grid.Column="1" Text="Tekst" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="lyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
 
             <!--Wyświetlanie akordów-->
             <TextBlock Grid.Row="0" Grid.Column="3" Text="Akordy" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="chords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" IsReadOnly="True"/>
         </Grid>
     </Grid>
     

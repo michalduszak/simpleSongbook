@@ -90,7 +90,7 @@
             <TextBox Grid.Row="3" Grid.Column="0" x:Name="editLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
 
             <!-- AKORDY UTWORU-->
-            <TextBlock Grid.Row="1" Grid.Column="2" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Text="Akordy" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="3" Grid.Column="2" x:Name="editChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
         </Grid>
 

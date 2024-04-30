@@ -39,7 +39,7 @@
                 </Grid.ColumnDefinitions>
                 
                 
-                <Button Height="50" Width="50" Grid.Column="0">
+                <Button Height="50" Width="50" Grid.Column="0" Click="AddSong">
                     <Button.Template>
                         <ControlTemplate>
                             <Image Source="/resources/done.png" />
@@ -88,11 +88,11 @@
             
             <!-- TEKST UTWORU -->
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="0" x:Name="addLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
+            <TextBox Grid.Row="3" Grid.Column="0" x:Name="addLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
             
             <!-- AKORDY UTWORU-->
-            <TextBlock Grid.Row="1" Grid.Column="2" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="2" x:Name="addChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
+            <TextBlock Grid.Row="1" Grid.Column="2" Text="Akordy" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="3" Grid.Column="2" x:Name="addChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
         </Grid>
         
     </Grid>

@@ -19,11 +19,28 @@ namespace SimpleSongbook
     /// </summary>
     public partial class Add : Window
     {
+        SongContext songContext;
         public Add()
         {
+            songContext = new SongContext();
             InitializeComponent();
         }
 
+        private void AddSong(object sender, RoutedEventArgs e)
+        {
+            Song addSong = new Song() { Title = addTitle.Text, Chords=addChords.Text, Lyrics=addLyrics.Text};
+
+            try
+            {
+                songContext.Add(addSong);
+                songContext.SaveChanges();
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
