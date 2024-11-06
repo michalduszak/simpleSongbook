@@ -46,7 +46,7 @@ namespace SimpleSongbook
 
         private void AddButton(object sender, RoutedEventArgs e)
         {
-            Add addWindow = new();
+            SongCreator addWindow = new();
             addWindow.ShowDialog();
             RefreshSonglist();
             GC.Collect();
@@ -80,7 +80,7 @@ namespace SimpleSongbook
             {
                 Song songToEdit = (Song)songList.SelectedItem;
                
-                Edit editWindow = new Edit(songToEdit);
+                SongEditor editWindow = new SongEditor(songToEdit);
                 editWindow.ShowDialog();
                 RefreshSonglist();
             }
@@ -90,7 +90,7 @@ namespace SimpleSongbook
             }
         }
 
-        private void Darkmode(object sender, RoutedEventArgs e)
+        private void ToggleDarkmode(object sender, RoutedEventArgs e)
         {
             if (!DarkmodeState)
             {

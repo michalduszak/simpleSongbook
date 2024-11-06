@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Add.xaml.cs">
+    <Compile Update="SongCreator.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Edit.xaml.cs">
+    <Compile Update="SongEditor.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Add.xaml">
+    <Page Update="SongCreator.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Edit.xaml">
+    <Page Update="SongEditor.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\mduszak\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\
+C:\Users\mduszak\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\obj\Debug\net7.0-windows\
 SimpleSongbook
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\mduszak\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\SimpleSongbook\App.xaml
-42096838313
+C:\Users\mduszak\Documents\GitHub\simpleSongbook\SimpleSongbook\SimpleSongbook\App.xaml
+42027797649
 
-121244577720
-238-1244056921
-Add.xaml;Edit.xaml;MainWindow.xaml;Styles.xaml;
+12-1421607169
+238-245982269
+MainWindow.xaml;SongCreator.xaml;SongEditor.xaml;Styles.xaml;
 
 False
 

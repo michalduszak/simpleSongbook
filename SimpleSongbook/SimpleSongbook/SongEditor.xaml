@@ -1,15 +1,14 @@
-﻿<Window x:Class="SimpleSongbook.Add"
+﻿<Window x:Class="SimpleSongbook.SongEditor"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleSongbook"
         mc:Ignorable="d"
-        Style="{DynamicResource WindowStyle}"
+        Title="Edit" Height="650" Width="1200"
         FontFamily="Segoe UI Semilight"
-        Title="Add" Height="650" Width="1200">
-    
-    
+      Style="{DynamicResource WindowStyle}">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -37,9 +36,9 @@
                     <ColumnDefinition Width="10"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                
-                
-                <Button Height="50" Width="50" Grid.Column="0" Click="AddSong">
+
+
+                <Button Height="50" Width="50" Grid.Column="0" Click="EditSong">
                     <Button.Template>
                         <ControlTemplate>
                             <Image Source="/resources/done.png" />
@@ -54,23 +53,23 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                
+
 
             </Grid>
-            
+
             <Grid Grid.Column="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="10"/>
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
-                
+
                 <!-- TYTUŁ UTWORU -->
                 <TextBlock Grid.Row="0" Text="Tytuł" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
-                <TextBox Padding="10" Grid.Row="2"  x:Name="addTitle" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
+                <TextBox Padding="10" Grid.Row="2"  x:Name="editTitle" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20"/>
 
             </Grid>
-            
+
         </Grid>
 
         <Grid Grid.Row="2" Grid.Column="1">
@@ -85,18 +84,16 @@
                 <RowDefinition Height="10"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            
+
             <!-- TEKST UTWORU -->
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Tekst" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="0" x:Name="addLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
-            
+            <TextBox Grid.Row="3" Grid.Column="0" x:Name="editLyrics" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
+
             <!-- AKORDY UTWORU-->
             <TextBlock Grid.Row="1" Grid.Column="2" Text="Akordy" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="2" x:Name="addChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
+            <TextBox Grid.Row="3" Grid.Column="2" x:Name="editChords" Style="{DynamicResource TextBoxStyle}" FontSize="20" TextBlock.LineHeight="20" AcceptsReturn="True"/>
         </Grid>
-        
+
     </Grid>
-    
-    
     
 </Window>

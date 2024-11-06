@@ -15,38 +15,31 @@ using System.Windows.Shapes;
 namespace SimpleSongbook
 {
     /// <summary>
-    /// Interaction logic for Edit.xaml
+    /// Interaction logic for Add.xaml
     /// </summary>
-    public partial class Edit : Window
+    public partial class SongCreator : Window
     {
         SongContext songContext;
-        Song songToEdit;
-        public Edit(Song songToEditPassed)
+        public SongCreator()
         {
             songContext = new SongContext();
-            songToEdit = songToEditPassed;
             InitializeComponent();
-            editLyrics.Text = songToEditPassed.Lyrics;
-            editChords.Text = songToEditPassed.Chords;
-            editTitle.Text = songToEditPassed.Title;
-
-
         }
 
-        private void EditSong(object sender, RoutedEventArgs e)
+        private void AddSong(object sender, RoutedEventArgs e)
         {
-            songToEdit.Lyrics = editLyrics.Text;
-            songToEdit.Title = editTitle.Text;
-            songToEdit.Chords = editChords.Text;
+            Song addSong = new Song() { Title = addTitle.Text, Chords=addChords.Text, Lyrics=addLyrics.Text};
 
             try
             {
-                songContext.Songs.Update(songToEdit);
+                songContext.Add(addSong);
                 songContext.SaveChanges();
                 this.Close();
             }
-            catch (Exception) { }
-            
+            catch (Exception)
+            {
+
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

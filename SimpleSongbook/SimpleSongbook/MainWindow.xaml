@@ -73,7 +73,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Height="50" Width="50" Grid.Column="4" Grid.Row="1" Click="Darkmode" x:Name="darkmodeButton">
+            <Button Height="50" Width="50" Grid.Column="4" Grid.Row="1" Click="ToggleDarkmode" x:Name="darkmodeButton">
                 <Button.Template >
                     <ControlTemplate>
                         <Image Source="/resources/moon.png" x:Name="darkmodeImage"/>
