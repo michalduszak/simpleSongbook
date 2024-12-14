@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\misiu\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\songeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\songeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\misiu\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\misiu\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\songcreator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\songcreator.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|c:\\users\\misiu\\documents\\github\\simplesongbook\\simplesongbook\\simplesongbook\\songcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF52CEF-009F-4ECC-BCB5-B91DB95FB1A3}|SimpleSongbook\\SimpleSongbook.csproj|solutionrelative:simplesongbook\\songcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 192,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +50,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SongCreator.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongCreator.xaml.cs",
+              "RelativeDocumentMoniker": "SimpleSongbook\\SongCreator.xaml.cs",
+              "ToolTip": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongCreator.xaml.cs",
+              "RelativeToolTip": "SimpleSongbook\\SongCreator.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:31:06.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SongEditor.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongEditor.xaml.cs",
+              "RelativeDocumentMoniker": "SimpleSongbook\\SongEditor.xaml.cs",
+              "ToolTip": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongEditor.xaml.cs",
+              "RelativeToolTip": "SimpleSongbook\\SongEditor.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:30:54.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SongContext.cs",
+              "DocumentMoniker": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongContext.cs",
+              "RelativeDocumentMoniker": "SimpleSongbook\\SongContext.cs",
+              "ToolTip": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SongContext.cs",
+              "RelativeToolTip": "SimpleSongbook\\SongContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:30:52.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SimpleSongbook\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\MainWindow.xaml.cs",
               "RelativeToolTip": "SimpleSongbook\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAswLAAAABEAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAA9wFsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T18:21:42.024Z",
               "EditorCaption": ""

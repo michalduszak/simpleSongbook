@@ -36,7 +36,9 @@ namespace SimpleSongbook
                 songContext.SaveChanges();
                 this.Close();
             }
-            catch (Exception){}
+            catch (Exception)
+            {
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
