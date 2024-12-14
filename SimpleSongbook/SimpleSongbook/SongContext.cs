@@ -18,9 +18,17 @@ namespace SimpleSongbook
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Song>().HasData(
-                new Song { SongID = 1, Title = "Testowa piosenka", Lyrics = "Cześć, robię test\nWPF fajny nie jest\nMam już dość go\nprosze zabierzcie go", Chords = "C a F G\n C a F G\n C a F G" },
-                new Song { SongID = 2, Title = "Zmęczona piosenka", Lyrics = "Cześć, robię nic\nnic fajny jest\nMam już dość go\nprosze zabierzcie go", Chords = "nicG\n C a F G\n niiiiiiic" }
+            String firstSongTitle = "Testowa piosenka";
+            String firstSongLyrics = "Cześć, robię test\nWPF fajny nie jest\nMam już dość go\nprosze zabierzcie go";
+            String firstSongChords = "C a F G\n C a F G\n C a F G";
+
+            String secondSongTitle = "Zmęczona piosenka";
+            String secondSongLyrics = "Cześć, robię nic\nnic fajny jest\nMam już dość go\nprosze zabierzcie go";
+            String secondSongChords = "nicG\n C a F G\n niiiiiiic";
+
+			modelBuilder.Entity<Song>().HasData(
+                new Song {SongID = 1, Title = firstSongTitle, Lyrics = firstSongLyrics, Chords = firstSongChords},
+                new Song {SongID = 2, Title = secondSongTitle, Lyrics = secondSongLyrics, Chords = secondSongChords}
                 );
         }
     }

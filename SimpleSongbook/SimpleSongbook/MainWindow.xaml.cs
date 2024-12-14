@@ -26,22 +26,11 @@ namespace SimpleSongbook
         private bool AutoscrollState { get; set; } = false;
         List<Song> songListDB;
 
-        
         public MainWindow()
         {
             songContext = new();
             InitializeComponent();
             RefreshSonglist();
-        }
-
-        private void RefreshSonglist()
-        {
-            songListDB = songContext.Songs.Select(s => s).ToList();
-            songList.ItemsSource = null;
-            songList.ItemsSource = songListDB;
-            songList.SelectedItem = null;
-            lyrics.Text =  "";
-            chords.Text = "";
         }
 
         private void AddButton(object sender, RoutedEventArgs e)
@@ -79,8 +68,8 @@ namespace SimpleSongbook
             if (songList.SelectedItem != null)
             {
                 Song songToEdit = (Song)songList.SelectedItem;
-               
                 SongEditor editWindow = new SongEditor(songToEdit);
+
                 editWindow.ShowDialog();
                 RefreshSonglist();
             }
@@ -90,7 +79,17 @@ namespace SimpleSongbook
             }
         }
 
-        private void ToggleDarkmode(object sender, RoutedEventArgs e)
+		private void RefreshSonglist()
+		{
+			songListDB = songContext.Songs.Select(s => s).ToList();
+			songList.ItemsSource = null;
+			songList.ItemsSource = songListDB;
+			songList.SelectedItem = null;
+			lyrics.Text = "";
+			chords.Text = "";
+		}
+
+		private void ToggleDarkmode(object sender, RoutedEventArgs e)
         {
             if (!DarkmodeState)
             {
@@ -113,13 +112,11 @@ namespace SimpleSongbook
                 windowStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.DimGray));
                 windowStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
 
-
                 listViewStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.Black));
                 listViewStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
 
                 textBoxStyle.Setters.Add(new Setter(Control.BackgroundProperty, Brushes.Black));
                 textBoxStyle.Setters.Add(new Setter(Control.ForegroundProperty, Brushes.White));
-
 
                 // Apply the changes
                 appResources["WindowStyle"] = windowStyle;
@@ -170,10 +167,10 @@ namespace SimpleSongbook
                 chords.Text = songToAdd.Chords;
             }
         }
+
         private void ScrollText(object sender, ScrollChangedEventArgs e)
         {
             var textToSync = (sender == ScrollLyrics) ? ScrollChords : ScrollLyrics;
-
             textToSync.ScrollToVerticalOffset(e.VerticalOffset);
         }
 
@@ -184,17 +181,12 @@ namespace SimpleSongbook
                 AutoscrollState = true;
                 var scrollImage = scrollButton.Template.FindName("scrollImage", scrollButton) as Image;
                 scrollImage.Source = new BitmapImage(new Uri("/resources/stop.png", UriKind.Relative));
-
-                int scrollSpeed = 1500; // milliseconds per line
+                int millisecondsPerLine = 1500;
 
                 while (AutoscrollState)
                 {
-                    
-                    // Scroll down by a small amount
                     ScrollLyrics.LineDown();
-
-                    // Delay before scrolling next
-                    await Task.Delay(scrollSpeed);
+                    await Task.Delay(millisecondsPerLine);
                 }
             }
             else

@@ -21,6 +21,7 @@ namespace SimpleSongbook
     {
         SongContext songContext;
         Song songToEdit;
+
         public SongEditor(Song songToEditPassed)
         {
             songContext = new SongContext();
@@ -28,15 +29,13 @@ namespace SimpleSongbook
             InitializeComponent();
             editorLyrics.Text = songToEditPassed.Lyrics;
             editorChords.Text = songToEditPassed.Chords;
-            editotTitle.Text = songToEditPassed.Title;
-
-
+            editorTitle.Text = songToEditPassed.Title;
         }
 
         private void EditSong(object sender, RoutedEventArgs e)
         {
             songToEdit.Lyrics = editorLyrics.Text;
-            songToEdit.Title = editotTitle.Text;
+            songToEdit.Title = editorTitle.Text;
             songToEdit.Chords = editorChords.Text;
 
             try
@@ -46,8 +45,8 @@ namespace SimpleSongbook
                 this.Close();
             }
             catch (Exception) { }
-            
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj": {}
+    "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj": {
+    "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj",
+        "projectUniqueName": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj",
         "projectName": "SimpleSongbook",
-        "projectPath": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj",
-        "packagesPath": "C:\\Users\\mduszak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mduszak\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\obj\\",
+        "projectPath": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\SimpleSongbook.csproj",
+        "packagesPath": "C:\\Users\\Misiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Misiu\\Documents\\GitHub\\simpleSongbook\\SimpleSongbook\\SimpleSongbook\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mduszak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Misiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,7 +102,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
